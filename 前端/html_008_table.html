@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+
+    <pre>
+        table常用标签:
+        table标签：定义一个表格
+        caption标签：定义表格标题
+        tr标签:定义表格中的一行
+        th和td标签:定义一行中的一个单元格，td表示普通单元格，th表示头单元格
+
+        table常用属性;
+        border定义表格边框
+        border-collapse定义是否合并边框，参数有collapse(边框合并),separate(默认，边框分离),inherit(继承自父元素)
+        cellpadding定义单元格内内容与边框的距离
+        cellspacing定义单元格与单元格之间的距离
+        align设置单元格内容的水平对齐方式，参数有left,center,right
+        valign设置单元格内容的垂直对齐方式,参数有top,middle,bottom
+        colspan设置单元格水平合并
+        rowspan设置单元格垂直合并
+    </pre>
+
+    <h4>普通的表格</h4>
+    <table border="1" border-collapse="collapse" cellpadding="0" cellspacing="0">
+        <caption>我的表格</caption>
+        <tr>
+            <th>表头1</th>
+            <th>表头2</th>
+        </tr>
+        <tr>
+            <td>行1，列1</td>
+            <td>行1，列2</td>
+        </tr>
+        <tr>
+            <td>行2，列1</td>
+            <td>行2，列2</td>
+        </tr>
+    </table>
+
+    <h4>横跨两列的单元格，水平合并：</h4>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th colspan="2">电话</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+    <h4>横跨两行的单元格，垂直合并：</h4>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">电话</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+</body>
+</html>

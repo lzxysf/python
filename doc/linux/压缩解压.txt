@@ -1,0 +1,10 @@
+touch a.c
+tar -cvzf test.tar.gz a.c
+--c 建立新的备份文件
+--v 显示指令执行过程
+--z 或--gzip或--ungzip通过gzip指令处理备份文件
+--f 指定备份文件
+
+tar -xvzf test.tar.gz
+--x 从备份文件中还原文件
+
